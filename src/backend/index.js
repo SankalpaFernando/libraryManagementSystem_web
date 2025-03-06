@@ -8,7 +8,7 @@ const client = axios.create({
 client.interceptors.response.use(response=>response,async error=>{
     if(error?.response?.status ===403){
         toast.error("Session Expired")
-    //    window.location.href = "/login"
+        window.location.href = "/login"
     }
 })
 
