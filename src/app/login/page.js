@@ -37,7 +37,7 @@ export default () => {
           </h3>
 
           <p class="mt-1 text-center text-gray-500 -text-gray-400">
-            Login
+            Library Management System
           </p>
 
           <form onSubmit={handleSubmit(onSubmit)}>
@@ -63,7 +63,7 @@ export default () => {
 
             <div class="flex items-center justify-between mt-4">
 
-              <button class="px-6 py-2 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-lg hover:bg-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50">
+              <button class="px-6 w-full py-2 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-lg hover:bg-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50">
                 Sign In
               </button>
 
