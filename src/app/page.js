@@ -5,5 +5,12 @@ import { Badge, Table } from "rizzui";
 
 export default function Dashboard() {
   
-  return (<p>Redirecting..</p>)
+  return (
+    <>
+     <Head>
+        <title>Library Management System</title>
+      </Head>
+    <p>Redirecting</p>
+    </>
+  )
 }
