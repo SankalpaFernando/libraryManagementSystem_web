@@ -2,7 +2,7 @@ import toast from "react-hot-toast";
 import client from "./index";
 
 export const createMember = async({first_name,last_name,joined_date,phone_number,address})=>{
-    const response = await client.post(`https:/serverlibrarymanagement.up.railway.app/member`,{
+    const response = await client.post(`https://serverlibrarymanagement.up.railway.app/member`,{
         firstName:first_name,
         lastName: last_name,
         joinedDate:joined_date,
@@ -19,7 +19,7 @@ export const createMember = async({first_name,last_name,joined_date,phone_number
 
 export const getMembers = async(search,page=0)=>{
     console.log(search)
-    const response = await client.get(`https:/serverlibrarymanagement.up.railway.app/member?search=${search}&page=${page}`,{
+    const response = await client.get(`https://serverlibrarymanagement.up.railway.app/member?search=${search}&page=${page}`,{
         headers:{
             Authorization: "Bearer "+localStorage.getItem("jwtToken")
         }
@@ -29,7 +29,7 @@ export const getMembers = async(search,page=0)=>{
 }
 
 export const updateMember = async(id,first_name,last_name,joinedDate,address,phoneNumber)=>{
-    const response = await client.put(`https:/serverlibrarymanagement.up.railway.app/member`,{
+    const response = await client.put(`https://serverlibrarymanagement.up.railway.app/member`,{
         id,
         firstName:first_name,
         lastName:last_name,
@@ -46,7 +46,7 @@ export const updateMember = async(id,first_name,last_name,joinedDate,address,pho
 }
 
 export const deleteMember = async(id)=>{
-    const response = await client.delete(`https:/serverlibrarymanagement.up.railway.app/member?member_id=${id}`,{
+    const response = await client.delete(`https://serverlibrarymanagement.up.railway.app/member?member_id=${id}`,{
         headers:{
             Authorization: "Bearer "+localStorage.getItem("jwtToken")
         }
