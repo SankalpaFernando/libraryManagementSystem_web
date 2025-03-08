@@ -10,8 +10,7 @@ export default () => {
     const router = useRouter();
 
     const onSubmit = async(data)=>{
-        userLogin(data.email,data.password).then(
-          router.push("/dashboard/book")
+        userLogin(data.email,data.password).then(()=>router.push("/dashboard/book")
         ).catch(error => {
           // Handle login error (e.g., show an alert)
           alert(error.message);

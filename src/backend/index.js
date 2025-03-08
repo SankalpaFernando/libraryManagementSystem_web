@@ -2,7 +2,7 @@ import axios from "axios";
 import toast from "react-hot-toast";
 
 const client = axios.create({
-    url:"https://serverlibrarymanagement.up.railway.app"
+    url:"http://localhost:8081"
 })
 
 client.interceptors.response.use(response=>response,async error=>{
